@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function box(){
+            for(a = 1;a<=10;a++)
+            document.getElementById("print_box").innerHTML += "<li>" + a + "</li>";
+        }
+    </script>
+    <style>
+        /* your styles go here */
+        li{
+            color : red;
+
+            font-size : 20px;
+            font-weight : bold;
+            float : left;
+            margin-right : 10px;
+            border : 2px solid black;
+            padding : 10px;
+            border-radius : 5px;
+        }
+        ul{
+            list-style-type : none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick ="box()">print numbers</button>
+    <ul id="print_box">
+
+    </ul>
+    
+</body>
+</html>

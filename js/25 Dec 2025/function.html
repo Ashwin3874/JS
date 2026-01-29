@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //function
+        //block of code
+        //resable code
+
+        //basic function
+        function info(){
+            alert("hello world");
+        }
+        //calling function 
+        //info();
+
+        //function with parameters
+        function get_name(name){
+            alert("hello" + name);
+
+        }
+
+        //calling function with argument
+        //get_name('alice');
+
+        //with return value 
+        x= 100
+        console.log(x);
+        function x_get_value(){
+            return 0;
+            
+        }
+         document.write(x_get_value(),"<br>");
+
+         
+
+         //function with return type and parameters
+         function add_numbers(a,b){
+            return a+b
+         }
+
+         //arrow function
+         const info1=()=>"welcome"
+         document.write(info1(),"<br>");
+
+         const get_real_name = (name) => "hello" + name;
+         document.write(get_real_name("Ashwin"),"<br>");
+
+         //return type object
+         const get_user = () => {
+            return {
+                name:"toy",
+                Age: 21
+            };
+         }
+         console.log(get_user());
+         console.log(get_user().name);
+
+         //function with object
+         const data = { 
+            name: "Ashwin",
+            Age: 21,
+            get_details: function(){
+                return this.name + "is"+ this.Age+"years old";
+            }
+         }
+         console.log(data.get_details());
+         console.log(data.name);
+    </script>
+</head>
+<body>
+    <button onclick="info()">click me</button>
+    <br><button onclick="get_name('Ashwin')">Get name</button>
+    <h1>
+        <script>
+             document.write(x_get_value());
+           
+        </script>
+    </h1>
+    <h1>Result:<script>
+        // your script goes here
+        document.write(add_numbers(10,20));
+    </script></h1>
+    
+</body>
+</html>
